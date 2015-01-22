@@ -1,0 +1,132 @@
+body {
+    background-color: #177E70;
+    font-family: 'Play', sans-serif;
+}
+
+.welcomeHeader {
+width: 100%;
+background-color: #133C36;
+color: white;
+height: 200px;
+font-family: 'Play';
+}
+
+.welcomeHeader h3{
+    float: right;
+    margin-top: 100px;
+    margin-right: 10px;
+    font-family: 'Play';
+}
+
+.welcomeHeader a {
+    color: white;
+    text-decoration: none;
+}
+
+.inputUsername input,
+.inputUsername button{
+ background-color: #133C36;
+color: white;
+}
+
+.inputUsername input {
+    width: 350px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.inputUsername button {
+    width: 100px;
+    height: 59px;
+    margin-left: 5px;
+}
+
+.headerNav {
+    display: block;
+    width: 100%;
+}
+
+.headerUser {
+    width: 25%;
+   background-color: #224843;
+    color: white;
+    float: left;
+    height: 231px;
+    text-align: center;
+}
+
+.headerUser img {
+    width: 150px;
+    border-radius: 50%;
+    align-content:center;
+    padding: 30px;
+    
+}
+
+.overallScore {
+    width: 75%;
+    float: left;
+    height: inherit;
+    background-color: #133C36;
+    color: white;
+    height: 231px;
+        
+}
+
+.overallScore h1,
+.overallScore h3{
+    text-align: center;
+    
+}
+
+.overallScore button{
+    width: 300px;
+    height: 50px;
+    background-color: #224843;
+    color: white;
+    font-size: 15px;
+    margin-left: 230px;
+    margin-top: 40px;
+}
+
+.userPoints {
+    width: 100%;
+    
+    
+}
+
+.frontendPoints {
+    width: 33%;
+    background-color: #224843;
+    color: white;
+    float: left;
+    height: 270px;
+}
+
+.backendPoints {
+    width: 34%;
+    float: left;
+    background-color: #133C36;
+    color: white;
+    height: 270px;
+}
+
+.mobilePoints {
+    width: 33%;
+    float: left;
+    background-color: #224843;
+    color: white;
+    height: 270px;
+}
+
+.userNameHeadings {
+    font-size: 14px;
+    color: #74948F;
+}
+
+.userSkills {
+    font-size: 12px;
+    display: inline;
+    color: #74948F;
+}
+

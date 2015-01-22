@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html ng-app>
+    <title>Treehouse Ranking App!</title>
+    <head>
+           <link href='http://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="main.css">
+     
+    </head>
+    <meta charset="utf-8">
+    
+    <body ng-controller="RankerController">
+        <div class="welcomeHeader" ng-show="togglePage">
+        <h1>TreeHouse Ranker Hack!</h1>
+        <span>See how your skills match up to the mighty dollar!</span>
+        <h3><a href="http://twitter.com/techwarriorz">Powered By TechWarriorz</a></h3>
+        </div>
+        <div class="inputUsername" ng-show="togglePage">
+        <input type="text" ng-model="userName" placeholder="Please Enter A Treehouse Username"><button ng-click="getUserData()">Search</button> <br>
+        </div>
+        <div ng-show="togglePage === false">
+        <div class="headerNav">
+       <div class="headerUser">
+        <h3>{{userData.name}}</h3>
+            <span> {{userData.points.total}}   <br>Points Total </span><br>
+           
+        <img ng-src="{{userData.gravatar_url}}">
+       
+        
+        </div>
+              <div class="overallScore">
+            
+            
+            <h1>{{userOverallScore.score}}</h1>
+            
+            <h3>{{userOverallScore.description}}</h3>
+                  
+                  <button ng-click="resetSearch();">Find Another User</button>
+                  
+        </div>
+        
+       
+        </div> 
+      
+      
+        <div class="userPoints">
+        <div class="frontendPoints">
+            <h3 class="userNameHeadings">{{userData.name}}'s Frontend Rating</h3>
+            <h2>{{userFrontendScore.score}}</h2>
+    
+            <p>{{userFrontendScore.description}}</p>
+            
+            <div class="userSkills">
+      <label>HTML -  </label> <span> {{userData.points.HTML}}</span><br>
+      <label>CSS -  </label> <span> {{userData.points.CSS}}</span><br>
+      <label>Design -  </label> <span> {{userData.points.Design}}</span><br>
+      <label>JavaScript -  </label> <span> {{userData.points.JavaScript}}</span><br>
+        </div>
+            </div>
+        
+          <div class="backendPoints">
+              <h3 class="userNameHeadings">{{userData.name}}'s Backend Rating</h3>
+              <h2>{{userBackendScore.score}}</h2>
+              <p>{{userBackendScore.description}}</p>
+            
+    <div class="userSkills">
+              <label>Ruby - </label> <span> {{userData.points.Ruby}}</span><br>
+       <label>PHP - </label> <span> {{userData.points.PHP}}</span><br>
+        <label>WordPress - </label><span> {{userData.points.WordPress}}</span><br>
+            <label>Python -  </label><span> {{userData.points.Python}}</span><br>
+       <label>Java -  </label> <span> {{userData.points.Java}}</span><br>
+      </div>
+        </div>
+        
+        <div class="mobilePoints">
+            <h3 class="userNameHeadings">{{userData.name}}'s Backend Rating</h3>
+            <h2>{{userMobileScore.score}}</h2>
+            <p>{{userMobileScore.description}}</p>
+           
+            <div class="userSkills">
+         <label>iOS - </label> <span> {{userData.points.iOS}}</span><br>
+        <label>Android - </label> <span> {{userData.points.Android}}</span><br>
+             </div>
+            
+
+         </div>
+            
+            </div>
+        
+       <div ng-show="userData.points.total">
+      
+       
+       
+       
+       
+        
+    </div>
+          </div>
+         
+    </body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+    <script src="rankerController.js"></script>
+
+</html>
