@@ -24,7 +24,6 @@ $scope.userOverallScore= {
 $scope.togglePage = true;
 
 
-    
 //Set the points for the frontend score!
 $scope.getUserFrontendScore = function () {    
 // Set Frontend Points
@@ -280,8 +279,9 @@ $scope.getUserFrontendScore = function () {
 //Methods
     $scope.getUserData = function () {
         $scope.overallScoreCount = 0;
-        $scope.togglePage = false;
+      
     $http.get('http://teamtreehouse.com/' + $scope.userName + '.json').success(function (result){
+      $scope.togglePage = false;
     $scope.userData = result;
     }).error(function(data){
     alert('Did Not Work, you dummy!');
