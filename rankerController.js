@@ -34,8 +34,8 @@ $scope.getUserFrontendScore = function () {
       $scope.userData.points.JavaScript) < 500
     ) {
      //Set the value for unpaid intern
-       $scope.userFrontendScore.score = "Intern";
-       $scope.userFrontendScore.description = "No one will pay you for your below-below mediocre skills.";
+       $scope.userFrontendScore.score = "Unpaid Intern";
+       $scope.userFrontendScore.description = "You gotta start somewhere :) This is the stage of your career, where you will be fixing broken code on less than sexy features and fixing broken unit tests.";
         $scope.overallScoreCount += 0;
     } else  if (
       ($scope.userData.points.HTML +
@@ -61,7 +61,7 @@ $scope.getUserFrontendScore = function () {
     ) {
      //Set the value for Junior Developer
        $scope.userFrontendScore.score = "Junior Developer- $$";
-       $scope.userFrontendScore.description = "You are good enough to fix bugs from the engineers that actually know what's up!";
+       $scope.userFrontendScore.description = "You are good enough to fix bugs for the engineers that actually know what's up! You even see yourself building 'Help Pages' and other 'Not So Sexy' Pages.";
         $scope.overallScoreCount += 2;
     } else if (
       ($scope.userData.points.HTML +
@@ -74,7 +74,7 @@ $scope.getUserFrontendScore = function () {
     ) {
      //Set the value for Intermediate Developer
        $scope.userFrontendScore.score = "Intermediate Developer- $$$";
-       $scope.userFrontendScore.description = "You are good enough to build the pages that the 'Cool Developers' are too cool to make!";
+       $scope.userFrontendScore.description = "You are at a point in your career, where your frontend skills are starting to shine and the senior developers only take one glance at your code before tossing it into production. As you have earned their respect.";
         $scope.overallScoreCount += 3;
     } else if (
       ($scope.userData.points.HTML +
@@ -87,7 +87,7 @@ $scope.getUserFrontendScore = function () {
     ) {
      //Set the value for Senior Developer
        $scope.userFrontendScore.score = "Senior Developer- $$$$";
-       $scope.userFrontendScore.description = "Though you have nearly mastered your craft, you are still the bitch of the Architect!";
+       $scope.userFrontendScore.description = "Though you have nearly mastered your craft and are the goto guy for the interns and Junior Developers. You now spend 80% of your time coding, 10% mentoring, and the final 10% lending your intellectual skills towards the architecture.";
         $scope.overallScoreCount += 4;
     } else if (
       ($scope.userData.points.HTML +
@@ -97,7 +97,7 @@ $scope.getUserFrontendScore = function () {
     ) {
      //Set the value for Architect
        $scope.userFrontendScore.score = "Architect- $$$$$";
-       $scope.userFrontendScore.description = "You are the overlord, even the suits are afraid to piss you off... as you are the one who is TRULY running the show.";
+       $scope.userFrontendScore.description = "You know your features inside and out as you are the man who is leading a small (or sometimes large) brigade in making the world a more web friendly place... but the learning never stops.";
         $scope.overallScoreCount += 5;
     }
 };
@@ -112,7 +112,7 @@ $scope.getUserFrontendScore = function () {
     ) {
     //set the value for unpaid intern
         $scope.userBackendScore.score = "Unpaid Intern- :(";
-        $scope.userBackendScore.description= "You don't know the difference between backend and a raunchy anal Ron Jeremy Film.";
+        $scope.userBackendScore.description= "The Server-Side is a very scary endeavor, but you should force yourself outside of your comfort zone, as it can be a VERY lucrative journey.";
         $scope.overallScoreCount += 0;
         } else      if (
    ($scope.userData.points.Ruby+
@@ -127,7 +127,7 @@ $scope.getUserFrontendScore = function () {
     ) {
     //set the value for paid intern
         $scope.userBackendScore.score = "Paid Intern- $";
-        $scope.userBackendScore.description= "You are good enough to Unit Test the Unit Tests of the Unit Tests.... of the Servers";
+        $scope.userBackendScore.description= "You are slick enough to handle Mapping and Unit Tests on products and features that aren't money makers. But you're in the game and making a pay day!";
         $scope.overallScoreCount += 1;
         } else if (
    ($scope.userData.points.Ruby+
@@ -142,7 +142,7 @@ $scope.getUserFrontendScore = function () {
     ) {
     //set the value for Junior Developer
         $scope.userBackendScore.score = "Junior Developer- $$";
-        $scope.userBackendScore.description= "You map EndPoints for the less cool frontend developers!";
+        $scope.userBackendScore.description= "When a Junior Frontend Developer needs an endpoint for some sweet JSON Data... and none of the other developers have the time to help them..... YOU SHALL BECOME the American Hero, who helps solve their problem.";
         $scope.overallScoreCount += 2;
         } else if (
    ($scope.userData.points.Ruby+
@@ -157,7 +157,7 @@ $scope.getUserFrontendScore = function () {
     ) {
     //set the value for Intermediate Developer
         $scope.userBackendScore.score = "Intermediate Developer- $$$";
-        $scope.userBackendScore.description= "You good enough to scale things that no one outside of the organization will ever see";
+        $scope.userBackendScore.description= "You are at a point where you are starting to play a more vital role on projects that actually make your company money. You're nowhere near Senior Level, but atleast you have earned the respect of your peers.";
         $scope.overallScoreCount += 3;
         } else if (
    ($scope.userData.points.Ruby+
@@ -172,7 +172,7 @@ $scope.getUserFrontendScore = function () {
     ) {
     //set the value for Senior Developer
         $scope.userBackendScore.score = "Senior Developer- $$$$";
-        $scope.userBackendScore.description= "The Company knows that without you, their customers would leave due to their products moving at a snails pace.";
+        $scope.userBackendScore.description= "The products/Services can handle millions of views per day... and if you're current place of employment were to become the next Google... it could very easily handle BILLIONS.";
         $scope.overallScoreCount += 4;
         } else if (
    ($scope.userData.points.Ruby+
@@ -183,7 +183,7 @@ $scope.getUserFrontendScore = function () {
     ) {
     //set the value for Architect
         $scope.userBackendScore.score = "Architect- $$$$$";
-        $scope.userBackendScore.description= "You run shit! You are the heart and soul of any project you work on... and you can ruin A LOT of lives if you choose.";
+        $scope.userBackendScore.description= "Everytime TechWarriorz mentions how fast your companies website operates... you're the one to thank. When TechWarriorz discusses the brilliance of the innovation... you'll know that you are the one to thank!";
         $scope.overallScoreCount += 5;
         }
     
@@ -197,7 +197,7 @@ $scope.getUserFrontendScore = function () {
       ) < 500) {
     //set the value for Unpaid Intern
         $scope.userMobileScore.score = "Unpaid Intern- :(";
-        $scope.userMobileScore.description = "You are probably one of those guys who can't even navigate through an mobile app... let alone even know where to begin to code one."
+        $scope.userMobileScore.description = "Mobile Development is a beast, though it may seem scary... mobile technology is paying a lot of bills right now. Not a bad idea to pick it up!"
         $scope.overallScoreCount += 0;
     } else     if(
     ($scope.userData.points.iOS +
@@ -207,7 +207,7 @@ $scope.getUserFrontendScore = function () {
       ) > 500 ) {
     //set the value for Paid Intern
         $scope.userMobileScore.score = "Paid Intern- $";
-        $scope.userMobileScore.description = "You are barely good enough to deal with minor tasks on apps that may get downloaded over 200 times."
+        $scope.userMobileScore.description = "Are you the guy building the app.... well parts of it, the parts that not a lot of people see, but you're still in the game... and collecting that check!"
         $scope.overallScoreCount += 1;
     } else if(
     ($scope.userData.points.iOS +
@@ -217,7 +217,7 @@ $scope.getUserFrontendScore = function () {
       ) > 2000 ) {
     //set the value for Junior Developer
         $scope.userMobileScore.score = "Junior Developer- $$";
-        $scope.userMobileScore.description = "You IMPLEMENT... Features that no one really sees nor cares about."
+        $scope.userMobileScore.description = "You IMPLEMENT the kind of important stuff and you BUILD the not-so-important stuff, but you are starting to hit your stride!"
         $scope.overallScoreCount += 2;
     } else if(
     ($scope.userData.points.iOS +
@@ -227,7 +227,7 @@ $scope.getUserFrontendScore = function () {
       ) > 4000 ) {
     //set the value for Intermediate Developer
         $scope.userMobileScore.score = "Intermediate Developer- $$$";
-        $scope.userMobileScore.description = "You get to do unattractive bitch work that the Senior Mobile Developers are too busy whacking off to get to."
+        $scope.userMobileScore.description = "You're starting to learn the true meaning of mobile development... and your skills are getting to a point where you are starting to become very dangerous."
         $scope.overallScoreCount += 3;
     } else if(
     ($scope.userData.points.iOS +
@@ -254,23 +254,23 @@ $scope.getUserFrontendScore = function () {
     
     $scope.getOverallUserScore = function () {
         if ($scope.overallScoreCount < 3) {
-            $scope.userOverallScore.score = "Minimal";
-            $scope.userOverallScore.description = "You're either new or you're just simply not trying very hard... study some more Treehouse or books.... or youtube.... or any other free resource before you miss the boom!";
+            $scope.userOverallScore.score = "Passively Learning";
+            $scope.userOverallScore.description = "Initially learning anything is a tedious process... but those who can learn to love the chaos typically come out on top. STICK WTIH IT!";
         } else if (($scope.overallScoreCount <= 6) && $scope.overallScoreCount > 3) {
-        $scope.userOverallScore.score = "Below Mediocre";
-        $scope.userOverallScore.description = "Unlike those who give a minimal effort, you put your daily hour in... but you lack the passion needed to be decent.";
+        $scope.userOverallScore.score = "Student";
+        $scope.userOverallScore.description = "Every morning, you sip your coffee, and pop on the Treehouse Learning Material... learning the languages that will not only improve your life, but the lives of those around you.";
         } else if (($scope.overallScoreCount <= 9) && $scope.overallScoreCount > 6) {
-        $scope.userOverallScore.score = "Mediocre";
-        $scope.userOverallScore.description = "You're good enough to be 'In The Show', but your not good enough to standout!";
+        $scope.userOverallScore.score = "Industry Standard";
+        $scope.userOverallScore.description = "Though you are not the Facebook/MIT Candidate that everyone is drooling over, you can lay down some high quality code!";
         } else if ($scope.overallScoreCount <= 12 && $scope.overallScoreCount > 9) {
-        $scope.userOverallScore.score = "Good, but not Great";
-        $scope.userOverallScore.description = "You are good at one or more pieces of the the pie, but you don't have what it takes to be a diebetic.";
+        $scope.userOverallScore.score = "Evolving";
+        $scope.userOverallScore.description = "By this stage you are starting to master one to two programming languages and have fellow Git-Hubbers constantly seeking your help for their repositories.";
         } else if ($scope.overallScoreCount <= 15 && $scope.overallScoreCount > 12) {
-        $scope.userOverallScore.score = "Great";
-        $scope.userOverallScore.description = "You have 1-2 portions of development mastered, and you are always looking to improve as a developer.";
+        $scope.userOverallScore.score = "Game Changer";
+        $scope.userOverallScore.description = "You are at a stage, where you can easily transfer between programming languages and easily implement new technologies (all you need is the documentation... and you can build whatever you want.";
         } else if ($scope.overallScoreCount > 15) {
-        $scope.userOverallScore.score = "Coding Super-Mastermind!";
-        $scope.userOverallScore.description = "You are an icon amongst programming geeks... when a junior developer gets into trouble, you're typically the first guy that they go to see.";
+        $scope.userOverallScore.score = "The Coder That Everyone Wants!";
+        $scope.userOverallScore.description = "You have it all... it doesn't matter whether it is frontend, backend, or mobile... you're the guy that can build products that will take a company public! Every other call you get is front a Hiring Manager (Not a Recruiter) that is willing to pay whatever they need to, to get you on board.";
         }
     
     
@@ -284,7 +284,7 @@ $scope.getUserFrontendScore = function () {
       $scope.togglePage = false;
     $scope.userData = result;
     }).error(function(data){
-    alert('Did Not Work, you dummy!');
+    alert('Did Not Work, please try again :)');
     });
     };
     
